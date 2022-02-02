@@ -1,0 +1,19 @@
+{
+    "name": "muktar-sayedsaleh/laravel-custom-ids-generator",
+    "description": "A PHP package for Laravel developers which allows them to generate custom-format IDs for any model.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MuktarSayedSaleh\\LaravelCustomIds\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muktar SayedSaleh",
+            "email": "muktar@monjz.com"
+        }
+    ],
+    "require": {
+    }
+}
