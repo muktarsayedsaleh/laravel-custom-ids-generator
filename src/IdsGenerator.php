@@ -22,14 +22,9 @@ class IdsGenerator {
             throw InvalidArgumentException('Invalid $format provided, Your format lacks {sequence}');
         }
 
-        if($sequence_length < 10)
-        {
-            $sequence_length = '0'.$sequence_length;
-        }
-
-        $count = $model->count();
+        $count = $model::count();
         while (true) {
-            $next_id = sprintf('%05u', ++$count);
+            $next_id = sprintf('%0'.$sequence_length.'u', ++$count);
 
             // applying format using regular expressions.
             // Thanks to the lessons learned when writting Al-Faraheedy project!
